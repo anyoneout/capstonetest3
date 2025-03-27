@@ -29,12 +29,12 @@ export function Server() {
   }
 
   async function getHeaderResponse() {
-    const response = await axios.get("http://localhost:9000/headers");
+    const response = await axios.get("http://localhost:3000/headers");
     const stringified = JSON.stringify(response.data);
     setHeaderResponse(stringified);
   }
   async function getRequestResponse() {
-    const response = await axios.get("http://localhost:9000/request");
+    const response = await axios.get("http://localhost:3000/request");
     const stringified = JSON.stringify(response.data);
     setRequestResponse(stringified);
   }
