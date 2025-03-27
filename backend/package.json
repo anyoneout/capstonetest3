@@ -1,0 +1,44 @@
+{
+  "name": "capstone-level-4-backend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "homepage": "https://anyoneout.github.io/capstonetest/",
+  "private": true,
+  "author": "",
+  "scripts": {
+    "start": "npm run close-port && npm run start-server",
+    "build": "npm run open-tab && npm run start-build",
+    "test": "npx jest ./src/utils/addition.test.js",
+    "-------": "------------------------------------------",
+    "open-tab": "npx open-cli http://localhost:3000",
+    "close-port": "npx kill-port 3000",
+    "start-server": "npx nodemon ./dist/main.js",
+    "start-build": "npx webpack --watch"
+  },
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.749.0",
+    "@aws-sdk/lib-dynamodb": "^3.749.0",
+    "@lobehub/icons": "^1.64.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.11",
+    "babel-loader": "^9.2.1",
+    "kill-port": "^2.0.1",
+    "nodemon": "^3.1.9",
+    "open-cli": "^8.0.0",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
