@@ -7,7 +7,7 @@ import "./CollapsibleNavbar.scss";
 export function CollapsibleNavbar() {
   const domain = window.location.hostname;
   let rootPath = "";
-  if (domain === "anyoneout.github.io") rootPath = "/Capstone-Level-4";
+  if (domain === "anyoneout.github.io") rootPath = "/capstonetest3";
   return (
     <nav className="navbar navbar-expand-lg mb-3 mt-4 py-0">
       <div className="container">

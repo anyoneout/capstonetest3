@@ -2,7 +2,7 @@
   "name": "capstone-level-4-frontend",
   "version": "1.0.0",
   "main": "index.tsx",
-  "homepage": "https://anyoneout.github.io/capstonetest3/",
+  "homepage": "https://anyoneout.github.io/capstonetest3/frontend",
   "private": true,
   "author": "",
   "scripts": {
